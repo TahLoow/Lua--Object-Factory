@@ -9,5 +9,5 @@ This generic object factory is the product of an evolutionary factory learning p
 - Also places each object's read-only tables into a separate dictionary.
 
 ## Factory.lua
-1. `Create`
+- `Create`
      - hee
