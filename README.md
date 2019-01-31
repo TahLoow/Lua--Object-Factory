@@ -9,5 +9,13 @@ This generic object factory is the product of an evolutionary factory learning p
 - Also places each object's read-only tables into a separate dictionary.
 
 ## Factory.lua
-- `Create`
-     - hee
+- `Create(ClassName,...)`
+     - Creates a new object of type ClassName. Passes \[...] arguments into class constructor
+     - Recursively includes dependency classes into object
+     - Returns an object interface known as `ProxyObject`
+
+- `ClassHas(ClassName,DependencySeek)`
+     - Returns true if ClassName has a direct dependency of type DependencySeek
+     
+- `GetClassesWithDependency(DependencySeek)`
+     - Returns a dictionary of all ClassNames that have a direct dependency of type DependencySeek
