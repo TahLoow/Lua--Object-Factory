@@ -1,4 +1,5 @@
---Returns a table that mirrors and handles all interpreted FactoryObjects.
+--Dependency of Factory.lua. Would be placed *into* Factory.lua in the Studio environment
+--Returns a table that mirrors and handles all interpreted Factory objects.
 local RepStor					= game:GetService("ReplicatedStorage")
 local RunService				= game:GetService("RunService")
 
