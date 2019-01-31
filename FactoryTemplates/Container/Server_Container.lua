@@ -23,7 +23,7 @@ local ClassData = {
 	Events = {},
 	
 	Initialize = function(self,Contents,Capacity,Quantity)
-		self.Contents = GM:TernaryTypeAssert(Contents,"string",Contents,"Unknown")
+		self.Contents = GM:TernaryTypeAssert(Contents,"string",Contents,"Unknown") --if Contents IsA string, assign Contents, else assign "Unknown"
 		self.Capacity = GM:TernaryTypeAssert(Capacity,"number",Capacity,0)
 		self.Quantity = GM:TernaryTypeAssert(Quantity,"number",Quantity,0)
 		
